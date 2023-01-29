@@ -1,0 +1,218 @@
+﻿<Window
+    x:Class="QuizApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:QuizApp"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="1200"
+    Height="800"
+    AllowsTransparency="True"
+    Background="Transparent"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Grid>
+        <Border Background="#1C1D31" CornerRadius="35" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="50" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <!--  Heading  -->
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Margin="20,50,0,0"
+                FontFamily="Oswald"
+                FontSize="40"
+                Foreground="#A6BBC8"
+                Text="Q U I Z   A P P" />
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Margin="50,90,0,23"
+                FontFamily="Robota"
+                FontSize="12"
+                Foreground="#A6BBC8"
+                Text="B Y   S A Y E M   A H A M E D   R O L L :- C 2 2 1 0 2 0 " />
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Margin="300,50,0,100"
+                VerticalAlignment="Bottom"
+                FontFamily="Oswald"
+                FontSize="40"
+                Foreground="#A6BBC8"
+                Text="S C O R E  " />
+            <TextBlock
+                Name="ScoreText"
+                Grid.Row="0"
+                Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Width="100"
+                Margin="440,0,0,100"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                FontFamily="Oswald"
+                FontSize="40"
+                Foreground="#A6BBC8"
+                Text="00" />
+            <TextBlock
+                Name="QuestionBlock"
+                Grid.Row="0"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Margin="50,0,270,23"
+                VerticalAlignment="Bottom"
+                FontFamily="Robota"
+                FontSize="20"
+                Foreground="#A6BBC8"
+                Text="Who is the precedent of Bangladesh? "
+                TextWrapping="WrapWithOverflow" />
+            <Border
+                Grid.Row="1"
+                Grid.Column="1"
+                CornerRadius="23">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.75,0" EndPoint="0,1">
+                        <GradientStop Offset="0.1" Color="#27BDE9" />
+                        <GradientStop Offset="0.8" Color="#ABDB54" />
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="3"
+                CornerRadius="23">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.75,0" EndPoint="0,1">
+                        <GradientStop Offset="0.1" Color="#DF208F" />
+                        <GradientStop Offset="0.8" Color="#DFCF20" />
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="1"
+                CornerRadius="23">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.75,0" EndPoint="0,1">
+                        <GradientStop Offset="0.1" Color="#F96100" />
+                        <GradientStop Offset="0.8" Color="#E70B75" />
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="3"
+                CornerRadius="23">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.75,0" EndPoint="0,1">
+                        <GradientStop Offset="0.1" Color="#06A4FB" />
+                        <GradientStop Offset="0.8" Color="#B84EEB" />
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <Button
+                Name="OptionA"
+                Grid.Row="1"
+                Grid.Column="1"
+                Background="Transparent"
+                BorderThickness="0"
+                Click="A"
+                FontSize="20"
+                FontWeight="Bold">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="23" />
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button
+                Name="OptionB"
+                Grid.Row="1"
+                Grid.Column="3"
+                Background="Transparent"
+                BorderThickness="0"
+                Click="B"
+                FontSize="20"
+                FontWeight="Bold">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="23" />
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button
+                Name="OptionC"
+                Grid.Row="3"
+                Grid.Column="1"
+                Background="Transparent"
+                BorderThickness="0"
+                Click="C"
+                FontSize="20"
+                FontWeight="Bold">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="23" />
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button
+                Name="OptionD"
+                Grid.Row="3"
+                Grid.Column="3"
+                Background="Transparent"
+                BorderThickness="0"
+                Click="D"
+                FontSize="20"
+                FontWeight="Bold">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="23" />
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button
+                Grid.Row="4"
+                Grid.Column="3"
+                Width="130"
+                Height="90"
+                Margin="0,115,0,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Click="Next_QS"
+                Content="NEXT"
+                FontFamily="Corbel Light"
+                FontSize="50"
+                Foreground="#264653">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="23" />
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0.75,0" EndPoint="0,1">
+                        <GradientStop Offset="0.1" Color="#257ce6" />
+                        <GradientStop Offset="0.8" Color="#00ffd0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
