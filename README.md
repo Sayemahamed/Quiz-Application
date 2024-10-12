@@ -1,7 +1,7 @@
 # Quiz Application
 
 ## Description
-This project is a C# .NET Windows application developed overnight for a class assignment. It utilizes Entity Framework with SQLite3 for data storage and WinForms for the user interface. The application is designed to serve as a simple quiz application, demonstrating core functionalities like database management and user interaction.
+This project is a simple C# .NET Windows application developed overnight for a class assignment. It uses Entity Framework with SQLite3 for database operations and WinForms for the user interface. The application serves as a basic quiz manager, where users can create and take quizzes. It's a straightforward project and a good starting point for beginners looking to learn about desktop app development using C#, database integration, and basic CRUD operations.
 
 ## Features
 - **Entity Framework**: Object-relational mapping (ORM) framework used for database operations.
