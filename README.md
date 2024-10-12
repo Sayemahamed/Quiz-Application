@@ -1,7 +1,3 @@
-Certainly! Here's the updated README with the provided repository link:
-
----
-
 # Quiz Application
 
 ## Description
@@ -42,7 +38,4 @@ Contributions are not expected for this assignment.
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Credits
-- List any credits or acknowledgments for libraries, tutorials, or resources used.
-
-
----
+- Complete C# Masterclass course from Udemy
